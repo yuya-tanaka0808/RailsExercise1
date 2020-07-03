@@ -1,0 +1,15 @@
+<h1>お問い合わせ一覧</h1>
+<table>
+  <tr>
+    <th>name&emsp;</th>
+    <th>email&emsp;</th>
+    <th>content&emsp;</th>
+  </tr>
+<% @contacts.each do |contact| %>
+  <tr>
+    <td><%= contact.name %>&emsp;</td>
+    <td><%= contact.email %>&emsp;</td>
+    <td><%= contact.content %>&emsp;</td>
+  </tr>
+<% end %>
+</table>
